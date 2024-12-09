@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2196f3;
+            --secondary-color: #f50057;
+            --background-color: #f4f4f4;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), #1976d2);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .features, .pricing, .testimonials, .integration {
+            padding: 50px 0;
+            background: white;
+        }
+
+        .feature-box, .pricing-box {
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 30px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-box:hover, .pricing-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .testimonial-card {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .cta {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .integration-logo {
+            max-width: 150px;
+            margin: 20px;
+            filter: grayscale(100%);
+            transition: all 0.3s ease;
+        }
+
+        .integration-logo:hover {
+            filter: grayscale(0%);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-utensils"></i> Restaurant Management System
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="btn btn-primary" href="/login">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Revolutionize Your Restaurant Management</h1>
+            <p class="lead">All-in-one solution for recipe costing, inventory control, and financial tracking</p>
+            <a href="#features" class="btn btn-light btn-lg mt-3">Explore Features</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="text-center mb-5">Key Features</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fas fa-calculator fa-3x text-primary mb-3"></i>
+                        <h3>Recipe Costing</h3>
+                        <p>Accurately calculate ingredient costs and recipe profitability</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fas fa-chart-pie fa-3x text-primary mb-3"></i>
+                        <h3>Inventory Control</h3>
+                        <p>Real-time tracking of stock levels and ingredient usage</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fas fa-dollar-sign fa-3x text-primary mb-3"></i>
+                        <h3>Financial Reporting</h3>
+                        <p>Comprehensive financial insights and revenue tracking</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="text-center mb-5">Pricing Plans</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="pricing-box">
+                        <h3>Starter</h3>
+                        <h4 class="text-primary">$29/month</h4>
+                        <ul class="list-unstyled">
+                            <li>Up to 5 Users</li>
+                            <li>Basic Reporting</li>
+                            <li>Recipe Management</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary">Choose Plan</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-box">
+                        <h3>Professional</h3>
+                        <h4 class="text-primary">$99/month</h4>
+                        <ul class="list-unstyled">
+                            <li>Up to 20 Users</li>
+                            <li>Advanced Reporting</li>
+                            <li>Inventory Tracking</li>
+                            <li>Financial Analytics</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Most Popular</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-box">
+                        <h3>Enterprise</h3>
+                        <h4 class="text-primary">Custom Pricing</h4>
+                        <ul class="list-unstyled">
+                            <li>Unlimited Users</li>
+                            <li>Full Feature Set</li>
+                            <li>Dedicated Support</li>
+                            <li>Custom Integrations</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p>"This system transformed our restaurant's financial management. Highly recommended!"</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="Customer">
+                            <div>
+                                <h5 class="mb-0">John Doe</h5>
+                                <small>Restaurant Owner</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p>"Incredible inventory tracking. We've reduced food waste by 30%!"</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="Customer">
+                            <div>
+                                <h5 class="mb-0">Jane Smith</h5>
+                                <small>Executive Chef</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p>"The recipe costing feature is a game-changer for our menu planning."</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="Customer">
+                            <div>
+                                <h5 class="mb-0">Mike Johnson</h5>
+                                <small>Restaurant Manager</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrations Section -->
+    <section id="integrations" class="integration">
+        <div class="container">
+            <h2 class="text-center mb-5">Seamless Integrations</h2>
+            <div class="text-center">
+                <img src="https://via.placeholder.com/150" alt="Integration Logo" class="integration-logo">
+                <img src="https://via.placeholder.com/150" alt="Integration Logo" class="integration-logo">
+                <img src="https://via.placeholder.com/150" alt="Integration Logo" class="integration-logo">
+                <img src="https://via.placeholder.com/150" alt="Integration Logo" class="integration-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Restaurant?</h2>
+            <p>Start your free 14-day trial and experience the power of smart restaurant management</p>
+            <a href="/signup" class="btn btn-light btn-lg mt-3">Start Free Trial</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2023 Restaurant Management System. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="mt-3">
+                <a href="#" class="text-white mx-2">Privacy Policy</a>
+                <a href="#" class="text-white mx-2">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
